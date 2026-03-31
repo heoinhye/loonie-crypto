@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+<main>
+    <section id="crypto-list">
+        <h2>Top 5 Cryptocurrencies</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Coin</th>
+                    <th>Price (CAD)</th>
+                    <th>24h Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(coin => { %>
+                    <tr class="crypto-row"> 
+                        <td><%= coin.market_cap_rank %></td>
+                        <td>
+                            <div class="coin-info">
+                                <img src="<%= coin.image %>" alt="<%= coin.name %>" width="25">
+                                <span><%= coin.name %> <strong>(<%= coin.symbol.toUpperCase() %>)</strong></span>
+                            </div>
+                        </td>
+                        <td>$<%= coin.current_price.toLocaleString() %></td>
+                        <td style="color: <%= coin.price_change_percentage_24h > 0 ? 'green' : 'red' %>">
+                            <%= coin.price_change_percentage_24h.toFixed(2) %>%
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
