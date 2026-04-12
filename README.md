@@ -18,6 +18,17 @@ A real-time cryptocurrency market data dashboard specifically tailored for the C
 - **Frontend:** EJS (Embedded JavaScript templates), CSS3
 - **API:** CoinGecko API(https://api.coingecko.com/api/v3/coins/markets)
 
+## ⚙️ Development Workflow & Project Management
+This project is managed using **Agile methodologies** through **Azure DevOps** to maintain high software quality and traceability.
+
+- **Project Management:** Tracked tasks and milestones using **Azure Boards (Agile/Kanban)**.
+- **Traceability:** Integrated **GitHub with Azure DevOps** to link specific code commits to work items (User Stories & Bug tracking).
+- **Automation Focus:** Implemented structured workflows to prepare for CI/CD pipeline integration.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/44cb77cd-6ca8-49c4-bb6d-4660d914d6b2" width="500px" alt="Azure DevOps and GitHub Integration" />
+  <p><i>Azure DevOps Project Management & GitHub Integration Dashboard</i></p>
+</div>
 
 ## 🚀 How to Run Locally
 1. Clone the repository:
